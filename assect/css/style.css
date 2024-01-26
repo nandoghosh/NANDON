@@ -139,13 +139,19 @@ header .header-top .right-item ul li {
 .navbar-brand {
     font-weight: 900;
     font-size: 46px !important;
-    color: #FDE767;
+    color: var(--yellow);
+}
+.navbar-brand:hover {
+    color: var(--black);
 }
 
 .navbar-brand span {
     font-weight: 900;
     font-size: 46px !important;
     color: #ffffff;
+}
+.navbar-brand:hover span {
+    color: var(--yellow);
 }
 
 nav ul li a {
@@ -166,6 +172,24 @@ nav ul li a {
 }
 
 /*** Footer ***/
+
+.footer-brand {
+    font-weight: 900;
+    font-size: 46px !important;
+    color: var(--yellow);
+}
+.footer-brand:hover {
+    color: var(--white);
+}
+
+.footer-brand span {
+    font-weight: 900;
+    font-size: 46px !important;
+    color: #ffffff;
+}
+.footer-brand:hover span {
+    color: var(--yellow);
+}
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
