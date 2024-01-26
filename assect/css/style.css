@@ -6,7 +6,7 @@
     --font: 'Poppins', sans-serif;
     --font-one: 'Montserrat', sans-serif;
     --blue: #0cc5f3;
-    --grey: #EEEDEB;
+    --gray: #83817d;
     --yellow: #FDE767;
     --pink: #F8EDFF;
     --white: #ffffff;
@@ -141,6 +141,7 @@ header .header-top .right-item ul li {
     font-size: 46px !important;
     color: var(--yellow);
 }
+
 .navbar-brand:hover {
     color: var(--black);
 }
@@ -150,6 +151,7 @@ header .header-top .right-item ul li {
     font-size: 46px !important;
     color: #ffffff;
 }
+
 .navbar-brand:hover span {
     color: var(--yellow);
 }
@@ -171,6 +173,60 @@ nav ul li a {
     margin-left: 550px;
 }
 
+
+/* just-for-you */
+.just-for-you {
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.just-for-you .card {
+    border: none;
+    border-radius: 0px;
+}
+
+.just-for-you .card:hover {
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.just-for-you .card .card-body .product-text {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 14px;
+    color: var(--black);
+}
+
+.just-for-you .card .card-body .product-price {
+    font-size: 20px;
+    line-height: 20px;
+    color: rgb(255, 115, 0);
+}
+
+.just-for-you .card .card-body .discount-percent {
+    font-size: 12px;
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.just-for-you .card .card-body .discount-percent .discount-price {
+    font-size: 12px;
+    color: var(--gray);
+    text-decoration: line-through;
+}
+
+.just-for-you .card .card-body .product-ratings {
+    color: var(--yellow);
+}
+
+.just-for-you .card .card-body .product-ratings .ratings {
+    color: var(--gray);
+    font-family: var(--font);
+    opacity: 50%;
+}
+
 /*** Footer ***/
 
 .footer-brand {
@@ -178,6 +234,7 @@ nav ul li a {
     font-size: 46px !important;
     color: var(--yellow);
 }
+
 .footer-brand:hover {
     color: var(--white);
 }
@@ -187,9 +244,11 @@ nav ul li a {
     font-size: 46px !important;
     color: #ffffff;
 }
+
 .footer-brand:hover span {
     color: var(--yellow);
 }
+
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
