@@ -1,6 +1,5 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+/* NONDON SHOP */
+/* Nando Ghosh */
 
 :root {
     --font: 'Poppins', sans-serif;
@@ -16,20 +15,14 @@
 body {
     font-family: var(--font);
     color: var(--gray);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 30px;
     font-weight: 500;
+    background-color: #f8f9fa;
 }
 
 a {
     color: var(--blue);
-    text-decoration: none;
-}
-
-a,
-a:hover,
-a:focus,
-a:visited {
     text-decoration: none;
 }
 
@@ -70,7 +63,7 @@ ul {
     transition: .5s;
 }
 
-.btn-primary{
+.btn-primary {
     color: var(--blue);
     border: 2px solid var(--blue);
     padding: 5px 10px;
@@ -78,6 +71,32 @@ ul {
     font-weight: 600;
     font-size: 16px;
 }
+
+.btn.btn-primary {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+@media (max-width: 767px) {
+    .btn.btn-primary {
+        display: none;
+    }
+}
+
+.btn-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 0px;
+}
+
 
 /* Header */
 
@@ -166,6 +185,36 @@ nav ul li a {
     -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.57);
     transition: all 0.4s ease 0s;
+}
+
+/* Categories */
+.categories .card {
+    height: 158px;
+    width: 158px;
+    border: none;
+    border-radius: 0px;
+    position: relative;
+}
+
+.categories .card:hover {
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.categories .card img {
+    height: 115px;
+    width: 115px;
+    padding: 10px;
+    align-self: center;
+}
+
+.categories .card .product-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0px 10px;
 }
 
 /* just-for-you */
