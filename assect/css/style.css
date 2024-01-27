@@ -46,6 +46,7 @@ ol,
 ul {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 0px;
 }
 
 .back-to-top {
@@ -139,13 +140,13 @@ header .header-top .right-item ul li {
 }
 
 .navbar-brand:hover {
-    color: var(--black);
+    color: var(--white);
 }
 
 .navbar-brand span {
     font-weight: 900;
     font-size: 46px !important;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .navbar-brand:hover span {
@@ -169,6 +170,119 @@ nav ul li a {
     margin-left: 550px;
 }
 
+
+/* verified */
+.verified {
+    background-color: #faefae;
+}
+
+.verified:hover {
+    background-color: var(--yellow);
+}
+
+.verified ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.verified ul li {
+    font-size: 16px;
+    line-height: 22px;
+    list-style: none;
+    padding-right: 15px;
+    border-right: 2px solid #d6d5d3;
+}
+
+.verified ul li:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+
+.verified ul li img {
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+.verified ul li a {
+    color: var(--black);
+    font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+    .verified ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .verified ul li {
+        border-right: none;
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .verified ul {
+        display: flex;
+    }
+
+    .verified ul li {
+        font-size: 14px;
+        border-right: none;
+        padding-right: 5px;
+    }
+}
+
+/* Services */
+.services .col {
+    border-right: 2px solid #d6d5d3;
+}
+
+.services .col:last-child {
+    border-right: 0px;
+}
+
+.services .card {
+    height: 135px;
+    width: 136px;
+    border: none;
+    border-radius: 0px;
+    position: relative;
+    background: transparent;
+}
+
+.services .card:hover {
+    color: var(--blue);
+}
+
+.services .last {
+    border-right: none;
+}
+
+.services .card img {
+    height: 95px;
+    width: 95px;
+    padding: 10px;
+    align-self: center;
+}
+
+.services .card .product-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .services .col {
+        border-right: none;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .services .col {
+        border-right: none;
+        margin-left: 15px;
+    }
+}
 /* Flash Sale */
 .flash-sale {
     padding: 10px 10px;
