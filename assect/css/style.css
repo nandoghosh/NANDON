@@ -158,6 +158,21 @@ nav ul li a {
     color: var(--white) !important;
 }
 
+nav ul li a:hover {
+    color: var(--yellow) !important;
+}
+
+nav ul li .dropdown-menu {
+    position: relative;
+    display: none !important;
+    top: 40px !important;
+    width: 50px !important;
+}
+
+nav ul li:hover .dropdown-menu {
+    display: initial !important;
+}
+
 .search-box {
     position: relative;
     width: 600px;
@@ -182,13 +197,107 @@ nav ul li a {
     }
 }
 
-/* Slider */
-.slider {
-
+/* Side Menu */
+.sidemenu {
+    border-radius: 10px;
+    padding: 10px 0px;
+    background-color: var(--white);
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease 0s;
 }
 
-.carousel-inner {
+.sidemenu ul {
+    position: relative;
+    list-style: none;
+}
+
+.sidemenu ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--gray) !important;
+    padding: 0px 20px;
+    transition: .5s ease;
+}
+
+.sidemenu ul li a:hover {
+    color: var(--blue) !important;
+}
+
+.sidemenu ul ul {
+    position: absolute;
+    left: 308px;
+    width: 100%;
+    top: 0;
+    display: none;
+    background-color: var(--white);
     border-radius: 5px;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease 0s;
+}
+
+.sidemenu ul span {
+    position: absolute;
+    display: none;
+    right: 20px;
+    font-size: 26px;
+}
+
+.sidemenu ul li:hover span {
+    display: initial;
+    z-index: 999;
+}
+
+.sidemenu ul .dropdown {
+    position: relative;
+}
+
+.sidemenu ul .dropdown:hover>ul {
+    display: initial;
+    z-index: 999;
+    padding: 10px 5px;
+}
+
+.sidemenu ul .dropdown_two ul {
+    position: absolute;
+    left: 307px;
+    width: 500px;
+    top: 0;
+}
+
+.sidemenu ul .dropdown_two:hover ul {
+    display: initial;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+}
+
+.product img {
+    height: 70px;
+    width: 70px;
+    padding: 5px;
+}
+
+.product .product-text {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/* Slider */
+.slider {}
+
+.carousel-inner {
+    border-radius: 10px;
 }
 
 .carousel-control-next,
