@@ -57,6 +57,10 @@ ul {
     z-index: 99;
 }
 
+.bg-primary {
+    background-color: var(--blue) !important;
+}
+
 /*** Button ***/
 .btn {
     font-family: 'Nunito', sans-serif;
@@ -74,8 +78,9 @@ ul {
 }
 
 .btn.btn-primary {
-    color: var(--white);
+    color: var(--black);
     background-color: var(--blue);
+    border: none;
 }
 
 .buy_now {
@@ -118,6 +123,16 @@ ul {
 
 .card {
     border: none;
+    border-radius: 0px;
+}
+
+.card-header:first-child {
+    border-radius: 0px;
+    border: none;
+}
+
+.form-control {
+    border-radius: 0px;
 }
 
 /* Header */
@@ -425,7 +440,7 @@ nav ul li:hover .dropdown-menu {
 }
 
 .services .card:hover {
-    color: var(--blue);
+    color: var(--blue) !important;
 }
 
 .services .last {
