@@ -91,6 +91,14 @@ ul {
     border: 1px solid rgb(255, 115, 0);
     background: transparent;
 }
+.buy_now:hover {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--white);
+    border: 1px solid var(--blue);
+    background: var(--blue);
+}
 
 .view_more {
     font-size: 18px;
@@ -99,6 +107,14 @@ ul {
     color: rgb(255, 115, 0);
     border: 1px solid rgb(255, 115, 0);
     background: transparent;
+}
+.view_more:hover {
+    font-size: 18px;
+    padding: 10px 100px;
+    font-weight: 600;
+    color: var(--white);
+    border: 1px solid var(--blue);
+    background: var(--blue);
 }
 
 @media (max-width: 767px) {
@@ -842,4 +858,11 @@ nav ul li:hover .dropdown-menu {
 .like:hover {
     background: var(--blue);
     color: #fff;
+}
+
+/* Dashboard */
+.dashboard  ul li{
+    list-style: none;
+    padding: 5px 0px;
+    font-size: 20px;
 }
