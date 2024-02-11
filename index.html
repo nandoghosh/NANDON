@@ -22,6 +22,10 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/686e4da3bd.js" crossorigin="anonymous"></script>
 
+    <!-- owl Carousel -->
+    <link rel="stylesheet" href="assect/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assect/css/owl.theme.default.min.css">
+
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="assect/css/style.css">
 
@@ -31,89 +35,309 @@
 
     <!-- Header Part Start -->
     <header>
-        <section class="header-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 left-item">
-                        <ul>
-                            <li><a class="text-light" href="#">Save More on App</a></li>
-                            <li class="text-light">|</li>
-                            <li><a class="text-light" href="#">Gift Cards</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 d-none d-lg-block right-item">
-                        <ul>
-                            <li><a class="text-light" href="#">Become a Seller</a></li>
-                            <li class="text-light">|</li>
-                            <li><a class="text-light" href="#">Brand Outlet</a></li>
-                            <li class="text-light">|</li>
-                            <li><a class="text-light" href="#">Daily Deals</a></li>
-                        </ul>
+
+        <!-- Desktop Nav Star-->
+        <section class="d-none d-lg-block">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 left-item">
+                            <ul>
+                                <li><a class="text-light" href="#">Save More on App</a></li>
+                                <li class="text-light">|</li>
+                                <li><a class="text-light" href="#">Gift Cards</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 right-item">
+                            <ul>
+                                <li><a class="text-light" href="#">Become a Seller</a></li>
+                                <li class="text-light">|</li>
+                                <li><a class="text-light" href="#">Brand Outlet</a></li>
+                                <li class="text-light">|</li>
+                                <li><a class="text-light" href="#">Daily Deals</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section>
-            <nav id="navbar_top" class="navbar navbar-expand-lg py-3 nav-bg">
-                <div class="container">
-                    <a class="navbar-brand" href="#">N<span>A</span>ND<span>O</span>N</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="ms-auto d-flex">
-                            <input class="form-control me-2 search-box" type="search" placeholder="Search"
-                                aria-label="Search">
-                            <button class="btn search-icon" type="submit"><i
-                                    class="fa-solid fa-magnifying-glass"></i></button>
-                        </div>
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <i class="fa-solid fa-globe"></i> EN
-                                </a>
-                                <ul class="dropdown-menu px-3 py-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            Bangla
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault2" checked>
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                            English
-                                        </label>
-                                    </div>
 
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"><i class="fa-regular fa-heart"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"><i
-                                        class="fa-solid fa-cart-plus"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Log in</a>
-                            </li>
-                            <li class="nav-item">
-                                <span class="nav-link">|</span>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sign up</a>
-                            </li>
-                        </ul>
+            <div>
+                <nav id="navbar_top" class="navbar navbar-expand-lg py-3 nav-bg">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">N<span>A</span>ND<span>O</span>N</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form class="ms-auto d-flex">
+                                <input class="form-control me-2 search-box" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn search-icon" type="submit"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa-solid fa-globe"></i> EN
+                                    </a>
+                                    <ul class="dropdown-menu px-3 py-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Bangla
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                English
+                                            </label>
+                                        </div>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Log in</a>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link">|</span>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sign up</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#"><i
+                                            class="fa-regular fa-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#"><i
+                                            class="fa-solid fa-cart-plus"></i></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </section>
+        <!-- Desktop Nav End-->
+
+        <!-- Mobile Nav Start -->
+        <section class="d-block d-lg-none">
+            <div class="mobile-header-top px-5">
+                <div class="mobile-header-top-icon">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-nav">
+                <nav id="mobile_navbar_top" class="navbar py-2 nav-bg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">N<span>A</span>ND<span>O</span>N</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-start nav-bg" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="navbar-brand" href="#">N<span>A</span>ND<span>O</span>N</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav flex-grow-1 pe-3">
+                                    <li class="nav-item dropdown"><a class="nav-link" href="#"
+                                            data-bs-toggle="dropdown">Women's & Girl's Fashion <span>&rsaquo;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Muslim Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Inner Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link" href="#"
+                                            data-bs-toggle="dropdown">Health & Beauty<span>&rsaquo;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Muslim Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Inner Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link" href="#"
+                                            data-bs-toggle="dropdown">Watches,Gags,Jewellery <span>&rsaquo;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Muslim Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Inner Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link" href="#"
+                                            data-bs-toggle="dropdown">Men's & Boy's Fashion <span>&rsaquo;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Muslim Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Inner Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link" href="#"
+                                            data-bs-toggle="dropdown">Mother & Baby <span>&rsaquo;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Muslim Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Inner Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link" href="#"
+                                            data-bs-toggle="dropdown">Electronic Devices <span>&rsaquo;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Muslim Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Inner Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link" href="#"
+                                            data-bs-toggle="dropdown">TV & Home Appliances <span>&rsaquo;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Muslim Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Inner Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link" href="#"
+                                            data-bs-toggle="dropdown">Electronic Accessories <span>&rsaquo;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Muslim Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Inner Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link" href="#"
+                                            data-bs-toggle="dropdown">Groceries <span>&rsaquo;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Muslim Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Inner Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link" href="#"
+                                            data-bs-toggle="dropdown">Home & Lifestyle <span>&rsaquo;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Muslim Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Inner Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link" href="#"
+                                            data-bs-toggle="dropdown">Sports & Outdoors <span>&rsaquo;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Muslim Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Inner Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link" href="#"
+                                            data-bs-toggle="dropdown">Automotive & Motorbike <span>&rsaquo;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Traditional Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Muslim Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Western Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Inner Wear</a></li>
+                                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                            <li><a class="dropdown-item" href="#">Bags</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="container">
+                <form class="d-flex mobile-search-box mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+
+            <div>
+                <nav class='mobile'>
+                    <ul>
+                        <li><a href='#'><span><i class="fa-solid fa-house-chimney"></i>
+                                </span><span>Home</span></a></li>
+
+                        <li><a href='#'><span><i class="fa-solid fa-cart-shopping"></i> <small
+                                        class="tx">0</small></span>
+                                <span>Cart</span></a> </li>
+
+                        <li><a href='#'><span><i class="fa-solid fa-heart"></i> <small>0</small></span>
+                                <span>Wishlist</span></a></li>
+                        <li><a href='#'><span><i class="fa-regular fa-user"></i></span>
+                                <span>Profile</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <!-- Mobile Nav End -->
+
     </header>
     <!-- Header Part End -->
 
@@ -121,9 +345,9 @@
     <main>
 
         <!-- Option & Slider Part Start -->
-        <section class="option-slider container mt-5">
+        <section class="option-slider container mt-3 mt-lg-5">
             <div class="row">
-                <div class="col-md-3 d-none d-lg-block">
+                <div class="col-lg-3 d-none d-lg-block">
                     <div class="sidemenu">
                         <ul>
                             <li class="dropdown"><a href="##">Women's & Girl's Fashion <span>&rsaquo;</span></a>
@@ -138,134 +362,50 @@
                                     </li>
                                     <li class="dropdown_two"><a href="#">Muslim Wear</a>
                                         <ul>
-                                            <div class="d-flex">
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-1.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Shalwar Kameez</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-2.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Sarees</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-3.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Kurtis</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-4.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Unstitched Fabric</p>
-                                                    </a></li>
-                                            </div>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown_two"><a href="#">Western Wear</a>
                                         <ul>
-                                            <div class="d-flex">
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-1.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Shalwar Kameez</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-2.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Sarees</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-3.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Kurtis</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-4.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Unstitched Fabric</p>
-                                                    </a></li>
-                                            </div>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown_two"><a href="#">Inner Wear</a>
                                         <ul>
-                                            <div class="d-flex">
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-1.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Shalwar Kameez</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-2.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Sarees</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-3.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Kurtis</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-4.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Unstitched Fabric</p>
-                                                    </a></li>
-                                            </div>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown_two"><a href="#">Shoes</a>
                                         <ul>
-                                            <div class="d-flex">
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-1.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Shalwar Kameez</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-2.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Sarees</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-3.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Kurtis</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-4.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Unstitched Fabric</p>
-                                                    </a></li>
-                                            </div>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown_two"><a href="#">Bags</a>
                                         <ul>
-                                            <div class="d-flex">
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-1.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Shalwar Kameez</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-2.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Sarees</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-3.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Kurtis</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-4.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Unstitched Fabric</p>
-                                                    </a></li>
-                                            </div>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown_two"><a href="#">Watches</a>
                                         <ul>
-                                            <div class="d-flex">
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-1.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Shalwar Kameez</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-2.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Sarees</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-3.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Kurtis</p>
-                                                    </a></li>
-                                                <li><a class="product" href="#"><img src="assect/img/items/item-4.avif"
-                                                            alt="...">
-                                                        <p class="product-text">Unstitched Fabric</p>
-                                                    </a></li>
-                                            </div>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
                                         </ul>
                                     </li>
 
@@ -274,6 +414,54 @@
                             <li class="dropdown"><a href="##">Health & Beauty <span>&rsaquo;</span></a>
                                 <ul>
                                     <li class="dropdown_two"><a href="#">Traditional Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Muslim Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Western Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Inner Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Shoes</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Bags</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Watches</a>
                                         <ul>
                                             <li><a href="#">Shalwar Kameez</a></li>
                                             <li><a href="#">Sarees</a></li>
@@ -293,11 +481,107 @@
                                             <li><a href="#">Unstitched Fabric</a></li>
                                         </ul>
                                     </li>
+                                    <li class="dropdown_two"><a href="#">Muslim Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Western Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Inner Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Shoes</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Bags</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Watches</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="dropdown"><a href="##">Men's & Boy's Fashion <span>&rsaquo;</span></a>
                                 <ul>
                                     <li class="dropdown_two"><a href="#">Traditional Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Muslim Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Western Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Inner Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Shoes</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Bags</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Watches</a>
                                         <ul>
                                             <li><a href="#">Shalwar Kameez</a></li>
                                             <li><a href="#">Sarees</a></li>
@@ -317,11 +601,107 @@
                                             <li><a href="#">Unstitched Fabric</a></li>
                                         </ul>
                                     </li>
+                                    <li class="dropdown_two"><a href="#">Muslim Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Western Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Inner Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Shoes</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Bags</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Watches</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="dropdown"><a href="##">Electronic Devices <span>&rsaquo;</span></a>
                                 <ul>
                                     <li class="dropdown_two"><a href="#">Traditional Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Muslim Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Western Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Inner Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Shoes</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Bags</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Watches</a>
                                         <ul>
                                             <li><a href="#">Shalwar Kameez</a></li>
                                             <li><a href="#">Sarees</a></li>
@@ -341,11 +721,107 @@
                                             <li><a href="#">Unstitched Fabric</a></li>
                                         </ul>
                                     </li>
+                                    <li class="dropdown_two"><a href="#">Muslim Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Western Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Inner Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Shoes</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Bags</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Watches</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="dropdown"><a href="##">Electronic Accessories <span>&rsaquo;</span></a>
                                 <ul>
                                     <li class="dropdown_two"><a href="#">Traditional Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Muslim Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Western Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Inner Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Shoes</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Bags</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Watches</a>
                                         <ul>
                                             <li><a href="#">Shalwar Kameez</a></li>
                                             <li><a href="#">Sarees</a></li>
@@ -365,11 +841,107 @@
                                             <li><a href="#">Unstitched Fabric</a></li>
                                         </ul>
                                     </li>
+                                    <li class="dropdown_two"><a href="#">Muslim Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Western Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Inner Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Shoes</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Bags</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Watches</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="dropdown"><a href="##">Home & Lifestyle <span>&rsaquo;</span></a>
                                 <ul>
                                     <li class="dropdown_two"><a href="#">Traditional Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Muslim Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Western Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Inner Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Shoes</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Bags</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Watches</a>
                                         <ul>
                                             <li><a href="#">Shalwar Kameez</a></li>
                                             <li><a href="#">Sarees</a></li>
@@ -389,11 +961,107 @@
                                             <li><a href="#">Unstitched Fabric</a></li>
                                         </ul>
                                     </li>
+                                    <li class="dropdown_two"><a href="#">Muslim Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Western Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Inner Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Shoes</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Bags</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Watches</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="dropdown"><a href="##">Automotive & Motorbike <span>&rsaquo;</span></a>
                                 <ul>
                                     <li class="dropdown_two"><a href="#">Traditional Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Muslim Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Western Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Inner Wear</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Shoes</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Bags</a>
+                                        <ul>
+                                            <li><a href="#">Shalwar Kameez</a></li>
+                                            <li><a href="#">Sarees</a></li>
+                                            <li><a href="#">Kurtis</a></li>
+                                            <li><a href="#">Unstitched Fabric</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown_two"><a href="#">Watches</a>
                                         <ul>
                                             <li><a href="#">Shalwar Kameez</a></li>
                                             <li><a href="#">Sarees</a></li>
@@ -407,7 +1075,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-9 slider">
+                <div class="col-lg-9 slider">
                     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -455,7 +1123,7 @@
         <!-- Option & Slider Part End -->
 
         <!-- Camping Part Start -->
-        <section class="camping container d-none d-lg-block mt-5">
+        <section class="camping container d-none d-xl-block mt-5">
             <div class="camp-img">
                 <a href=""><img src="assect/img/slider/free delevery.jpg" alt=""></a>
             </div>
@@ -482,68 +1150,71 @@
         <!-- Verified Part End -->
 
         <!-- Services Part Start -->
-        <section class="services container mt-5 bg-white p-3">
-            <div class="row g-1">
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/services/wholesale price.png" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Wholesale Price</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/services/everyday low price.png" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Everyday Low Price!</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/services/free delivery.png" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Free Delivery</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/services/fashion.png" class="card-img-top" alt="...">
-                        <p class="product-text">Fashion</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/services/beauty & glamour.png" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Beauty & Glamour</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/services/mart.png" class="card-img-top" alt="...">
-                        <p class="product-text">Mart</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/services/home makeover.png" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Home Makeover</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/services/best price.png" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Best Price Guaranteed</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card last" href="#"><img src="assect/img/services/visa card.png" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Payment</p>
-                    </a>
+        <section class="services container owl-carousel owl-theme owl-loaded mt-3 mt-lg-5 bg-white p-3">
+            <div class="owl-stage-outer">
+                <div class="row owl-stage g-1">
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/services/wholesale price.png" class="card-img-top"
+                                alt="...">
+                            <span class="product-text">Wholesale Price</span>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/services/everyday low price.png"
+                                class="card-img-top" alt="...">
+                            <span class="product-text">Everyday Low Price!</span>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/services/free delivery.png" class="card-img-top"
+                                alt="...">
+                            <span class="product-text">Free Delivery</span>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/services/fashion.png" class="card-img-top"
+                                alt="...">
+                            <span class="product-text">Fashion</span>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/services/beauty & glamour.png"
+                                class="card-img-top" alt="...">
+                            <span class="product-text">Beauty & Glamour</span>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/services/mart.png" class="card-img-top" alt="...">
+                            <span class="product-text">Mart</span>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/services/home makeover.png" class="card-img-top"
+                                alt="...">
+                            <span class="product-text">Home Makeover</span>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/services/best price.png" class="card-img-top"
+                                alt="...">
+                            <span class="product-text">Best Price Guaranteed</span>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card last" href="#"><img src="assect/img/services/visa card.png" class="card-img-top"
+                                alt="...">
+                            <span class="product-text">Payment</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Services Part End -->
 
         <!-- Flash Sale Start -->
-        <section class="flash-sale container mt-5">
+        <section class="flash-sale container owl-carousel owl-theme owl-loaded mt-5">
             <h2>Flash Sale</h2>
-            <div class="bg-white py-3 px-1">
+            <div class="owl-stage-outer bg-white py-3 px-1">
                 <div class="d-flex justify-content-between align-items-center px-3">
                     <div class="d-flex">
                         <h5 class="me-5">On Sale Now</h5>
@@ -555,8 +1226,8 @@
                     </div>
                 </div>
                 <hr>
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-2">
-                    <div class="col">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 owl-stage g-2">
+                    <div class="col owl-item">
                         <div class="card h-100">
                             <span class="favorite"><i class="fa-regular fa-heart"></i></span>
                             <img src="assect/img/product/man-watch.jpg" class="card-img-top" alt="...">
@@ -574,12 +1245,12 @@
                                 </small>
                                 <div class="text-center">
                                     <button type="button" class="buy_now">Buy Now</button>
-                                    <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button type="button" class="buy_now">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col owl-item">
                         <div class="card h-100">
                             <span class="favorite"><i class="fa-regular fa-heart"></i></span>
                             <img src="assect/img/product/watch.jpg" class="card-img-top" alt="...">
@@ -597,12 +1268,12 @@
                                 </small>
                                 <div class="text-center">
                                     <button type="button" class="buy_now">Buy Now</button>
-                                    <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button type="button" class="buy_now">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col owl-item">
                         <div class="card h-100">
                             <span class="favorite"><i class="fa-regular fa-heart"></i></span>
                             <img src="assect/img/product//bracelet.webp" class="card-img-top" alt="...">
@@ -620,12 +1291,12 @@
                                 </small>
                                 <div class="text-center">
                                     <button type="button" class="buy_now">Buy Now</button>
-                                    <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button type="button" class="buy_now">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col owl-item">
                         <div class="card h-100">
                             <span class="favorite"><i class="fa-regular fa-heart"></i></span>
                             <img src="assect/img/product/card-holder.webp" class="card-img-top" alt="...">
@@ -643,12 +1314,12 @@
                                 </small>
                                 <div class="text-center">
                                     <button type="button" class="buy_now">Buy Now</button>
-                                    <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button type="button" class="buy_now">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col owl-item">
                         <div class="card h-100">
                             <span class="favorite"><i class="fa-regular fa-heart"></i></span>
                             <img src="assect/img/product//t-shirt.webp" class="card-img-top" alt="...">
@@ -666,12 +1337,12 @@
                                 </small>
                                 <div class="text-center">
                                     <button type="button" class="buy_now">Buy Now</button>
-                                    <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button type="button" class="buy_now">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col owl-item">
                         <div class="card h-100">
                             <span class="favorite"><i class="fa-regular fa-heart"></i></span>
                             <img src="assect/img/product/room-slipper.webp" class="card-img-top" alt="...">
@@ -689,7 +1360,7 @@
                                 </small>
                                 <div class="text-center">
                                     <button type="button" class="buy_now">Buy Now</button>
-                                    <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button type="button" class="buy_now">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -701,100 +1372,107 @@
         <!-- Flash Sale End -->
 
         <!-- Categories Part Start -->
-        <section class="categories container mt-5">
+        <section class="categories container owl-carousel owl-theme owl-loaded mt-5">
             <h2>Categories</h2>
             <hr>
-            <div class="row g-1">
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/sofas.jpg" class="card-img-top" alt="...">
-                        <p class="product-text">Sofas</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/wardrobe.jpg" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Wardrobe Organisers</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/trimmers.jpg" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Trimmers & Groomers</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/moisturizers.png" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Moisturizers & Cream</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/dried.jpg" class="card-img-top" alt="...">
-                        <p class="product-text">Dried Fruit Nuts</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/drawing.jpg" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Drawing Pad</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/shirts.jpg" class="card-img-top" alt="...">
-                        <p class="product-text">Blouses & Shirts</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/fashion.jpg" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Fashion</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/wardrobe.jpg" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Sofas</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/wardrobe.jpg" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Wardrobe Organisers</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/trimmers.jpg" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Trimmers & Groomers</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/moisturizers.png" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Moisturizers & Cream</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/dried.jpg" class="card-img-top" alt="...">
-                        <p class="product-text">Dried Fruit Nuts</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/drawing.jpg" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Drawing Pad</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/shirts.jpg" class="card-img-top" alt="...">
-                        <p class="product-text">Blouses & Shirts</p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="card" href="#"><img src="assect/img/categories/fashion.jpg" class="card-img-top"
-                            alt="...">
-                        <p class="product-text">Fashion</p>
-                    </a>
+            <div class="owl-stage-outer">
+                <div class="row owl-stage g-1">
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/sofas.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Sofas</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/wardrobe.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Wardrobe Organisers</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/trimmers.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Trimmers & Groomers</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/moisturizers.png" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Moisturizers & Cream</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/dried.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Dried Fruit Nuts</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/drawing.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Drawing Pad</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/shirts.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Blouses & Shirts</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/fashion.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Fashion</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/wardrobe.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Sofas</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/wardrobe.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Wardrobe Organisers</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/trimmers.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Trimmers & Groomers</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/moisturizers.png" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Moisturizers & Cream</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/dried.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Dried Fruit Nuts</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/drawing.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Drawing Pad</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/shirts.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Blouses & Shirts</p>
+                        </a>
+                    </div>
+                    <div class="col owl-item">
+                        <a class="card" href="#"><img src="assect/img/categories/fashion.jpg" class="card-img-top"
+                                alt="...">
+                            <p class="product-text">Fashion</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -823,7 +1501,7 @@
                             </small>
                             <div class="text-center">
                                 <button type="button" class="buy_now">Buy Now</button>
-                                <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                <button type="button" class="buy_now">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -846,7 +1524,7 @@
                             </small>
                             <div class="text-center">
                                 <button type="button" class="buy_now">Buy Now</button>
-                                <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                <button type="button" class="buy_now">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -869,7 +1547,7 @@
                             </small>
                             <div class="text-center">
                                 <button type="button" class="buy_now">Buy Now</button>
-                                <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                <button type="button" class="buy_now">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -892,7 +1570,7 @@
                             </small>
                             <div class="text-center">
                                 <button type="button" class="buy_now">Buy Now</button>
-                                <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                <button type="button" class="buy_now">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -915,7 +1593,7 @@
                             </small>
                             <div class="text-center">
                                 <button type="button" class="buy_now">Buy Now</button>
-                                <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                <button type="button" class="buy_now">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -938,7 +1616,7 @@
                             </small>
                             <div class="text-center">
                                 <button type="button" class="buy_now">Buy Now</button>
-                                <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                <button type="button" class="buy_now">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -961,7 +1639,7 @@
                             </small>
                             <div class="text-center">
                                 <button type="button" class="buy_now">Buy Now</button>
-                                <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                <button type="button" class="buy_now">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -984,7 +1662,7 @@
                             </small>
                             <div class="text-center">
                                 <button type="button" class="buy_now">Buy Now</button>
-                                <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                <button type="button" class="buy_now">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -1007,7 +1685,7 @@
                             </small>
                             <div class="text-center">
                                 <button type="button" class="buy_now">Buy Now</button>
-                                <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                <button type="button" class="buy_now">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -1030,7 +1708,7 @@
                             </small>
                             <div class="text-center">
                                 <button type="button" class="buy_now">Buy Now</button>
-                                <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                <button type="button" class="buy_now">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -1053,7 +1731,7 @@
                             </small>
                             <div class="text-center">
                                 <button type="button" class="buy_now">Buy Now</button>
-                                <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                <button type="button" class="buy_now">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -1076,7 +1754,7 @@
                             </small>
                             <div class="text-center">
                                 <button type="button" class="buy_now">Buy Now</button>
-                                <button type="button" class="buy_now"><i class="fa-solid fa-cart-plus"></i></button>
+                                <button type="button" class="buy_now">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -1169,9 +1847,14 @@
     </footer>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- Jquery -->
+    <script src="assect/js/jquery-3.7.1.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="assect/js/owl.carousel.min.js"></script>
 
     <!-- Custom Js -->
     <script src="assect/js/custom.js"></script>
