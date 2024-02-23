@@ -63,13 +63,13 @@ $('.services').owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 3,
-    },
-    600: {
       items: 4,
     },
-    1000: {
+    600: {
       items: 6,
+    },
+    1000: {
+      items: 7,
     },
     1400: {
       items: 9,
@@ -93,7 +93,7 @@ $('.flash-sale').owlCarousel({
       items: 3,
     },
     1000: {
-      items: 5,
+      items: 4,
     },
     1400: {
       items: 6,
@@ -102,6 +102,7 @@ $('.flash-sale').owlCarousel({
 })
 
 // categories
+
 $('.categories').owlCarousel({
   loop: true,
   dots: false,
@@ -111,14 +112,14 @@ $('.categories').owlCarousel({
   responsiveClass: true,
   responsive: {
     0: {
-      items: 3,
-      margin: 30
+      items: 4
     },
     600: {
-      items: 4,
+      items: 5,
     },
     1000: {
       items: 6,
+      margin:20
     },
     1400: {
       items: 8,
@@ -126,3 +127,8 @@ $('.categories').owlCarousel({
     }
   }
 })
+
+
+
+
+

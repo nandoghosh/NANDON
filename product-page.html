@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NONDON | Happy Shopping</title>
+    <title>ChowkBazar | Happy Shopping</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assect/img/logo/favicon.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -22,98 +25,147 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/686e4da3bd.js" crossorigin="anonymous"></script>
 
+    <!-- owl Carousel -->
+    <link rel="stylesheet" href="assect/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assect/css/owl.theme.default.min.css">
+
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="assect/css/style.css">
-
+    <link rel="stylesheet" href="assect/css/xzoom.css">
+    <link rel="stylesheet" href="assect/css/magnific-popup.css">
 </head>
 
 <body>
 
     <!-- Header Part Start -->
     <header>
-        <section class="header-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 left-item">
-                        <ul>
-                            <li><a class="text-light" href="#">Save More on App</a></li>
-                            <li class="text-light">|</li>
-                            <li><a class="text-light" href="#">Gift Cards</a></li>
-                        </ul>
+        <!-- Desktop Nav Star-->
+        <section class="d-none d-lg-block">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 left-item">
+                            <ul>
+                                <li><a class="text-light" href="#">Need Help ?</a></li>
+                                <li><a class="text-light" href="#">Call Us: +88 01700 000000 </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 right-item">
+                            <ul>
+                                <li><a class="text-light" href="#">Order Tracking</a></li>
+                                <li class="text-light">|</li>
+                                <li class="dropdown">
+                                    <a class="text-light dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-globe"></i> EN
+                                    </a>
+                                    <ul class="dropdown-menu px-3 py-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Bangla
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                English
+                                            </label>
+                                        </div>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-lg-6 d-none d-lg-block right-item">
+                </div>
+            </div>
+
+            <div class="desktop-nav">
+                <nav id="navbar_top" class="navbar navbar-expand-lg nav-bg">
+                    <div class="container">
+                        <a class="navbar-brand" href="#"><img src="assect/img/logo/logo.webp" alt="logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form class="ms-auto d-flex">
+                                <input class="form-control me-2 search-box" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn search-icon" type="submit"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sign in</a>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link text-light">|</span>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sign up</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#"><i
+                                            class="fa-regular fa-heart"></i><span>0</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#"><i
+                                            class="fa-solid fa-cart-plus"><span>0</span></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="header-down">
+                <div class="container">
+                    <div class="menu">
                         <ul>
-                            <li><a class="text-light" href="#">Become a Seller</a></li>
-                            <li class="text-light">|</li>
-                            <li><a class="text-light" href="#">Brand Outlet</a></li>
-                            <li class="text-light">|</li>
-                            <li><a class="text-light" href="#">Daily Deals</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li>|</li>
+                            <li><a href="#">Shop</a></li>
+                            <li>|</li>
+                            <li><a href="#">Categories</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="">
-            <nav id="navbar_top" class="navbar navbar-expand-lg py-3 nav-bg">
-                <div class="container">
-                    <a class="navbar-brand" href="#">N<span>A</span>ND<span>O</span>N</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="ms-auto d-flex">
-                            <input class="form-control me-2 search-box" type="search" placeholder="Search"
-                                aria-label="Search">
-                            <button class="btn search-icon" type="submit"><i
-                                    class="fa-solid fa-magnifying-glass"></i></button>
-                        </div>
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <i class="fa-solid fa-globe"></i> EN
-                                </a>
-                                <ul class="dropdown-menu px-3 py-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            Bangla
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault2" checked>
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                            English
-                                        </label>
-                                    </div>
+        <!-- Desktop Nav End-->
 
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"><i class="fa-regular fa-heart"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"><i
-                                        class="fa-solid fa-cart-plus"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Log in</a>
-                            </li>
-                            <li class="nav-item">
-                                <span class="nav-link">|</span>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sign up</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <!-- Mobile Nav Start -->
+        <section class="d-block d-lg-none">
+            <!-- Search Bar Start-->
+            <div class="container">
+                <form class="d-flex search-box" role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn search-icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <!-- Search Bar End-->
+
+            <!-- Button Menu Start -->
+            <div>
+                <nav class='mobile-product-page-bar'>
+                    <ul class="product-page-bar">
+                        <li><a href='#'><i class="fa-solid fa-house-chimney"></i></a></li>
+                        <li><a href='#'><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        <div class="d-flex">
+                            <li class="buy-now"><a href='#'><span class="btn-txt">Buy Now</span></a></li>
+                            <li class="add-cart"><a href='#'><span class="btn-txt">Add To Cart</span></a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Button Menu End -->
         </section>
+        <!-- Mobile Nav End -->
+
     </header>
     <!-- Header Part End -->
 
@@ -123,17 +175,29 @@
         <section class="container bg-white my-5 p-5">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="preview-pic">
-                        <div><img src="assect/img/product/man-watch.jpg" /></div>
-
-                    </div>
-                    <ul class="preview-thumbnail nav">
-                        <li><a><img src="assect/img/product/man-watch.jpg" /></a></li>
-                        <li><a><img src="assect/img/product/man-watch.jpg" /></a></li>
-                        <li><a><img src="assect/img/product/man-watch.jpg" /></a></li>
-                        <li><a><img src="assect/img/product/man-watch.jpg" /></a></li>
-                        <li><a><img src="assect/img/product/man-watch.jpg" /></a></li>
-                    </ul>
+                    <!-- default start -->
+                    <section id="default" class="padding-top0">
+                        <div class="">
+                            <div class="">
+                                <div class="xzoom-container">
+                                    <img class="xzoom" id="xzoom-default" src="assect/img/product/sofas.jpg"
+                                        xoriginal="assect/img/product/sofas.jpg" />
+                                    <div class="xzoom-thumbs mt-4">
+                                        <a href="assect/img/product/sofas.jpg"><img class="xzoom-gallery" width="40"
+                                                src="assect/img/product/sofas.jpg"
+                                                xpreview="assect/img/product/sofas.jpg"></a>
+                                        <a href="assect/img/product/sofas.jpg"><img class="xzoom-gallery" width="40"
+                                                src="assect/img/product/sofas.jpg"></a>
+                                        <a href="assect/img/product/watch.jpg"><img class="xzoom-gallery" width="40"
+                                                src="assect/img/product/watch.jpg"></a>
+                                        <a href="assect/img/product/watch.jpg"><img class="xzoom-gallery" width="40"
+                                                src="assect/img/product/watch.jpg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- default end -->
                 </div>
 
                 <div class="col-md-6">
@@ -162,10 +226,9 @@
                             <span class="size" title="xtra large">xl</span>
                         </h5>
                     </div>
-                    <div class="action">
+                    <div class="d-flex d-none d-lg-block">
                         <button class="like btn" type="button">Buy Now</button>
-                        <button class="like btn" type="button"><span class="fa fa-heart"></span></button>
-                        <button class="add-to-cart btn" type="button"><span class="fa fa-cart-plus"></span></button>
+                        <button class="like btn" type="button">Add to cart</button>
                     </div>
                 </div>
 
@@ -224,7 +287,7 @@
                 <div class="col-md-8 bg-white">
                     <div class="p-4">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-5">
                                 <h5>Ratings 8/10</h5>
                                 <span class="product-ratings">
                                     <i class="fa-solid fa-star"></i>
@@ -235,7 +298,7 @@
                                     <i class="ratings">(105)</i>
                                 </span>
                             </div>
-                            <div class="col-6">
+                            <div class="col-7">
                                 <div class="d-flex">
                                     <span class="product-ratings">
                                         <i class="fa-solid fa-star"></i>
@@ -341,155 +404,159 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card p-4">
-                        <h5 class="card-title">Similar items</h5>
-                        <div class="d-flex mb-3">
-                            <a href="#" class="me-3">
-                                <img src="assect/img/product/watch.jpg" style="min-width: 96px; height: 96px;"
-                                    class="img-md img-thumbnail" />
-                            </a>
-                            <div class="info">
-                                <a href="#" class="nav-link mb-1">
-                                    Rucksack Backpack Large <br />
-                                    Line Mounts
-                                </a>
-                                <strong class="product-price"> BDT 38.90</strong>
+                <div class="just-for-you col-md-4 bg-white border-start">
+                    <div class="py-4">
+                        <h5 class="">Similar items</h5>
+                        <div class="row row-cols-2 g-2">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <span class="favorite"><i class="fa-regular fa-heart"></i></span>
+                                    <a href="#"><img src="assect/img/product/man-watch.jpg" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body">
+                                        <p class="product-text">This is Brown Round Quartx Watch With Leather......</p>
+                                        <h5 class="product-price">BDT 581</h5>
+                                        <p class="discount-percent"><span class="discount-price">BDT 800</span> - 27%
+                                        </p>
+                                        <small class="product-ratings">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="ratings">(105)</i>
+                                        </small>
+                                        <div class="text-center">
+                                            <button type="submit" class="product_page_buy_now">Buy Now</button>
+                                            <button type="submit" class="product_page_add_to_cart">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="d-flex mb-3">
-                            <a href="#" class="me-3">
-                                <img src="assect/img/product/t-shirt.webp" style="min-width: 96px; height: 96px;"
-                                    class="img-md img-thumbnail" />
-                            </a>
-                            <div class="info">
-                                <a href="#" class="nav-link mb-1">
-                                    Summer New Men's Denim <br />
-                                    Jeans Shorts
-                                </a>
-                                <strong class="product-price"> BDT 29.50</strong>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <span class="favorite"><i class="fa-regular fa-heart"></i></span>
+                                    <a href="#"><img src="assect/img/product/watch.jpg" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body">
+                                        <p class="product-text">This is Brown Round Quartx Watch With Leather......</p>
+                                        <h5 class="product-price">BDT 581</h5>
+                                        <p class="discount-percent"><span class="discount-price">BDT 800</span> - 27%
+                                        </p>
+                                        <small class="product-ratings">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="ratings">(105)</i>
+                                        </small>
+                                        <div class="text-center">
+                                            <button type="submit" class="product_page_buy_now">Buy Now</button>
+                                            <button type="submit" class="product_page_add_to_cart">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="d-flex mb-3">
-                            <a href="#" class="me-3">
-                                <img src="assect/img/product/t-shirt.webp" style="min-width: 96px; height: 96px;"
-                                    class="img-md img-thumbnail" />
-                            </a>
-                            <div class="info">
-                                <a href="#" class="nav-link mb-1"> T-shirts with multiple colors, for men
-                                    and lady </a>
-                                <strong class="product-price">BDT 120.00</strong>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <span class="favorite"><i class="fa-regular fa-heart"></i></span>
+                                    <a href="#"><img src="assect/img/product//bracelet.webp" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body">
+                                        <p class="product-text">This is Brown Round Quartx Watch With Leather......</p>
+                                        <h5 class="product-price">BDT 581</h5>
+                                        <p class="discount-percent"><span class="discount-price">BDT 800</span> - 27%
+                                        </p>
+                                        <small class="product-ratings">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="ratings">(105)</i>
+                                        </small>
+                                        <div class="text-center">
+                                            <button type="submit" class="product_page_buy_now">Buy Now</button>
+                                            <button type="submit" class="product_page_add_to_cart">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="d-flex">
-                            <a href="#" class="me-3">
-                                <img src="assect/img/product/t-shirt.webp" style="min-width: 96px; height: 96px;"
-                                    class="img-md img-thumbnail" />
-                            </a>
-                            <div class="info">
-                                <a href="#" class="nav-link mb-1"> Blazer Suit Dress Jacket for Men, Blue
-                                    color </a>
-                                <strong class="product-price">BDT 339.90</strong>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <span class="favorite"><i class="fa-regular fa-heart"></i></span>
+                                    <a href="#"><img src="assect/img/product/card-holder.webp" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body">
+                                        <p class="product-text">This is Brown Round Quartx Watch With Leather......</p>
+                                        <h5 class="product-price">BDT 581</h5>
+                                        <p class="discount-percent"><span class="discount-price">BDT 800</span> - 27%
+                                        </p>
+                                        <small class="product-ratings">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="ratings">(105)</i>
+                                        </small>
+                                        <div class="text-center">
+                                            <button type="submit" class="product_page_buy_now">Buy Now</button>
+                                            <button type="submit" class="product_page_add_to_cart">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <a href="#" class="me-3">
-                                <img src="assect/img/product/t-shirt.webp" style="min-width: 96px; height: 96px;"
-                                    class="img-md img-thumbnail" />
-                            </a>
-                            <div class="info">
-                                <a href="#" class="nav-link mb-1">
-                                    Summer New Men's Denim <br />
-                                    Jeans Shorts
-                                </a>
-                                <strong class="product-price"> BDT 29.50</strong>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <span class="favorite"><i class="fa-regular fa-heart"></i></span>
+                                    <a href="#"><img src="assect/img/product//t-shirt.webp" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body">
+                                        <p class="product-text">This is Brown Round Quartx Watch With Leather......</p>
+                                        <h5 class="product-price">BDT 581</h5>
+                                        <p class="discount-percent"><span class="discount-price">BDT 800</span> - 27%
+                                        </p>
+                                        <small class="product-ratings">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="ratings">(105)</i>
+                                        </small>
+                                        <div class="text-center">
+                                            <button type="submit" class="product_page_buy_now">Buy Now</button>
+                                            <button type="submit" class="product_page_add_to_cart">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="d-flex mb-3">
-                            <a href="#" class="me-3">
-                                <img src="assect/img/product/t-shirt.webp" style="min-width: 96px; height: 96px;"
-                                    class="img-md img-thumbnail" />
-                            </a>
-                            <div class="info">
-                                <a href="#" class="nav-link mb-1"> T-shirts with multiple colors, for men
-                                    and lady </a>
-                                <strong class="product-price">BDT 120.00</strong>
-                            </div>
-                        </div>
-
-                        <div class="d-flex">
-                            <a href="#" class="me-3">
-                                <img src="assect/img/product/t-shirt.webp" style="min-width: 96px; height: 96px;"
-                                    class="img-md img-thumbnail" />
-                            </a>
-                            <div class="info">
-                                <a href="#" class="nav-link mb-1"> Blazer Suit Dress Jacket for Men, Blue
-                                    color </a>
-                                <strong class="product-price">BDT 339.90</strong>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <a href="#" class="me-3">
-                                <img src="assect/img/product/t-shirt.webp" style="min-width: 96px; height: 96px;"
-                                    class="img-md img-thumbnail" />
-                            </a>
-                            <div class="info">
-                                <a href="#" class="nav-link mb-1">
-                                    Summer New Men's Denim <br />
-                                    Jeans Shorts
-                                </a>
-                                <strong class="product-price"> BDT 29.50</strong>
-                            </div>
-                        </div>
-
-                        <div class="d-flex mb-3">
-                            <a href="#" class="me-3">
-                                <img src="assect/img/product/t-shirt.webp" style="min-width: 96px; height: 96px;"
-                                    class="img-md img-thumbnail" />
-                            </a>
-                            <div class="info">
-                                <a href="#" class="nav-link mb-1"> T-shirts with multiple colors, for men
-                                    and lady </a>
-                                <strong class="product-price">BDT 120.00</strong>
-                            </div>
-                        </div>
-
-                        <div class="d-flex">
-                            <a href="#" class="me-3">
-                                <img src="assect/img/product/t-shirt.webp" style="min-width: 96px; height: 96px;"
-                                    class="img-md img-thumbnail" />
-                            </a>
-                            <div class="info">
-                                <a href="#" class="nav-link mb-1"> Blazer Suit Dress Jacket for Men, Blue
-                                    color </a>
-                                <strong class="product-price">BDT 339.90</strong>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <a href="#" class="me-3">
-                                <img src="assect/img/product/t-shirt.webp" style="min-width: 96px; height: 96px;"
-                                    class="img-md img-thumbnail" />
-                            </a>
-                            <div class="info">
-                                <a href="#" class="nav-link mb-1"> T-shirts with multiple colors, for men
-                                    and lady </a>
-                                <strong class="product-price">BDT 120.00</strong>
-                            </div>
-                        </div>
-
-                        <div class="d-flex">
-                            <a href="#" class="me-3">
-                                <img src="assect/img/product/t-shirt.webp" style="min-width: 96px; height: 96px;"
-                                    class="img-md img-thumbnail" />
-                            </a>
-                            <div class="info">
-                                <a href="#" class="nav-link mb-1"> Blazer Suit Dress Jacket for Men, Blue
-                                    color </a>
-                                <strong class="product-price">BDT 339.90</strong>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <span class="favorite"><i class="fa-regular fa-heart"></i></span>
+                                    <a href="#"><img src="assect/img/product/room-slipper.webp" class="card-img-top"
+                                            alt="..."></a>
+                                    <div class="card-body">
+                                        <p class="product-text">This is Brown Round Quartx Watch With Leather......</p>
+                                        <h5 class="product-price">BDT 581</h5>
+                                        <p class="discount-percent"><span class="discount-price">BDT 800</span> - 27%
+                                        </p>
+                                        <small class="product-ratings">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="ratings">(105)</i>
+                                        </small>
+                                        <div class="text-center">
+                                            <button type="submit" class="product_page_buy_now">Buy Now</button>
+                                            <button type="submit" class="product_page_add_to_cart">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -503,25 +570,26 @@
     <!-- Body Part End -->
 
     <!-- Footer Start -->
-    <footer class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+    <footer class="container-fluid nav-bg footer wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <a class="footer-brand" href="#">N<span>A</span>ND<span>O</span>N</a>
-                    <p>Largest product search engine, maximum categorized online shopping mall and quickest home
+                <div class="col-md-6 col-lg-3">
+                    <a class="navbar-brand" href="#"><img src="assect/img/logo/logo.webp" alt="logo"></a>
+                    <p class="mt-2">Largest product search engine, maximum categorized online shopping mall and quickest
+                        home
                         delivery system.</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-social" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
 
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Let Us Help You</h4>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h4 class="mb-3">Let Us Help You</h4>
                     <a class="btn btn-link" href="#">Your Account</a>
                     <a class="btn btn-link" href="#">Your Order</a>
                     <a class="btn btn-link" href="#">Bye & Sell</a>
@@ -529,30 +597,30 @@
                     <a class="btn btn-link" href="#">Terms & Condition</a>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h4 class="mb-3">Contact</h4>
                     <p class="mb-1"><i class="fa fa-map-marker-alt me-3"></i>house-20 ,Road-6, Dhanmondi, <span
-                            class="ms-4">Dhaka-1207</span></p>
+                            class="ms-lg-4">Dhaka-1207</span></p>
                     <p class="mb-1"><i class="fa fa-phone-alt me-2"></i>+88 01700 000000</p>
                     <p class="mb-1"><i class="fa fa-phone-alt me-2"></i>+88 01700 000000</p>
                     <p class="mb-1"><i class="fa fa-envelope me-2"></i>info@example.com</p>
 
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Happy Shopping</h4>
+                <div class="col-md-6 col-lg-3">
+                    <h4 class="mb-3">Happy Shopping</h4>
                     <p>Easy To Life</p>
                     <div class="d-flex">
                         <div>
-                            <a href="#"><img style="width: 150px;" class="bg-light btn"
-                                    src="assect/img/resources/payment.png" alt=""></a>
+                            <a href="#"><img class="btn bg-light payment-img" src="assect/img/resources/payment.png"
+                                    alt=""></a>
                         </div>
                         <div>
-                            <a href="#"><img class="bg-light w-75 btn ms-2" src="assect/img/resources/play.png"
+                            <a href="#"><img class="bg-light w-50 btn ms-2" src="assect/img/resources/play.png"
                                     alt=""></a>
-                            <a href="#"><img class="bg-light w-75 btn ms-2 mt-2" src="assect/img/resources/appstore.png"
+                            <a href="#"><img class="bg-light w-50 btn ms-2 mt-2" src="assect/img/resources/appstore.png"
                                     alt=""></a>
-                            <a href="#"><img class="bg-light w-75 btn ms-2 mt-2"
+                            <a href="#"><img class="bg-light w-50 btn ms-2 mt-2"
                                     src="assect/img/resources/appgallery.png" alt=""></a>
                         </div>
                     </div>
@@ -563,9 +631,9 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="index.html">NANDON</a> || All Right Reserved.
+                        &copy; 2024 || <a href="index.html">ChowkBazar</a> || All Right Reserved.
 
-                        Designed By || <a class="border-bottom" href="#">Nando Ghosh</a>
+                        Designed By || <a href="#">Sky Dream IT</a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -581,12 +649,21 @@
     </footer>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" class="btn btn-dark btn-square back-to-top"><i class="fa fa-arrow-up text-light"></i></a>
+
+    <script>$(".xzoom").xzoom({ tint: '#333', Xoffset: 15 });</script>
+    <!-- Jquery -->
+    <script src="assect/js/jquery-3.7.1.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="assect/js/owl.carousel.min.js"></script>
 
     <!-- Custom Js -->
     <script src="assect/js/custom.js"></script>
+    <script src="assect/js/xzoom.js"></script>
+    <script src="assect/js/magnific-popup.js"></script>
+    <script src="assect/js/setup.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
